@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Сайт</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="{{ sd }}css.css" >
+    </head>
+
+    <body>
+
+        <div class="container">
+            {#
+            <div class="row">
+                <div class="col s1">1</div>
+                <div class="col s1">2</div>
+                <div class="col s1">3</div>
+                <div class="col s1">4</div>
+                <div class="col s1">5</div>
+                <div class="col s1">6</div>
+                <div class="col s1">7</div>
+                <div class="col s1">8</div>
+                <div class="col s1">9</div>
+                <div class="col s1">10</div>
+                <div class="col s1">11</div>
+                <div class="col s1">12</div>
+            </div>
+            #}
+            <div class="row">
+                <div class="col s6"><a href="/" class="purple-text text-darken-4" >ЗАголовок</a></div>
+                <div class="col s6"></div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+
+                    <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+
+                </div>
+                <div class="col s8">
+
+                    <nav>
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <a href="#!" class="breadcrumb">First</a>
+                                <a href="#!" class="breadcrumb">Second</a>
+                                <a href="#!" class="breadcrumb">Third</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="card-panel">
+                        <span class="blue-text text-darken-2">This is a card panel with dark blue text
+                            <Br/>
+                            <center>
+                                <a href="https://materializecss.com" target="_blank" class="blue-text text-darken-2" >https://materializecss.com</a>
+                            </center>
+                        </span>
+                    </div>
+
+                    {% if tpl_body is defined %}
+                        {#{ tpl_body }#}
+                        {% include tpl_body %}
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-{{ "now"|date("Y") }}</small>
+                </div>
+            </div>
+        </div>        
+
+        <br/>
+        <br/>
+        <br/>
+
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>    

@@ -1,7 +1,7 @@
 {
     "name": "didrive/tpls",
     "description": "Шаблоны для старта сайта",
-    "version": "0.1.3",
+    "version": "0.1.5",
     "keywords": [
         "didrive", "module", "nyos", "uralweb.info"
     ],
